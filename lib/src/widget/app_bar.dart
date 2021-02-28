@@ -145,7 +145,7 @@ class NeumorphicAppBarState extends State<NeumorphicAppBar> {
     final bool useCloseButton =
         parentRoute is PageRoute<dynamic> && parentRoute.fullscreenDialog;
 //     final ScaffoldState scaffold = Scaffold.maybeOf(context);
-    final ScaffoldState scaffold = Scaffold.Of(context,nullOk:true);
+    final ScaffoldState scaffold = Scaffold.Of(context);
     final bool hasDrawer = scaffold?.hasDrawer ?? false;
     final bool hasEndDrawer = scaffold?.hasEndDrawer ?? false;
 
